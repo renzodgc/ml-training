@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 120
+exclude = build
+inline-quotes = double
+per-file-ignores =
+    */__init__.py: F401,F403

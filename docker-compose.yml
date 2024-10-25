@@ -1,0 +1,12 @@
+services:
+  ml-training:
+    build: .
+    ports:
+      - "8888:8888"
+    env_file: .env
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - ${PWD}/src:/app/src
+      - ${PWD}/notebooks:/app/notebooks
